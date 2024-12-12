@@ -3,6 +3,15 @@ import { useState } from 'react';
 const messages = ['Learn React ⚛️', 'Apply for jobs 💼', 'Invest your new income 🤑'];
 
 export default function App() {
+  return (
+    <>
+      <Window />
+      <Window />
+    </>
+  );
+}
+
+function Window() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
   //const [test, setTest] = useState({ name: 'Dmitry' });
