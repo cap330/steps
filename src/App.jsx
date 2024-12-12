@@ -1,19 +1,16 @@
-// import { useState } from 'react';
-// import reactLogo from './assets/react.svg';
-// import viteLogo from '/vite.svg';
-//import './App.css';
+import { useState } from 'react';
 
 const messages = ['Learn React ⚛️', 'Apply for jobs 💼', 'Invest your new income 🤑'];
 
 export default function App() {
-  const step = 3;
+  const [step, setStep] = useState(1);
 
   function handlePrevious() {
-    alert('Previous');
+    setStep(step - 1);
   }
 
   function handleNext() {
-    alert('Next');
+    setStep(step + 1);
   }
 
   return (
